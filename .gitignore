@@ -15,3 +15,7 @@
 *.od*
 *.png
 *.html
+
+# Ignore folders
+data/
+docs/
