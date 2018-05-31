@@ -1,0 +1,39 @@
+---
+title: "Using R to access official data from the Guatemalan National Institute of Statistics"
+author: "Oscar de León"
+date: "May 31, 2018"
+output:
+  pdf_document:
+    pandoc_args: [
+      "--output=odeleon_guatemala-national-statistics.pdf"
+    ]
+urlcolor: blue
+
+---
+
+Although several technical standards are available regarding the preparation and
+dissemination of official statistics, entities producing these data will
+sometimes export it in formats native to the variety of tools they use for data
+management and analysis, and then publish these datasets in _ad hoc_ web portals
+not necessarily well suited for data consumption by statistical tools like R.
+Even if the data are available in one of the more common file formats
+(_e.g._ SAS, SPSS, or Stata data files, and even Excel spreadsheets),
+the web portals can prove difficult to even navigate in a web browser,
+let alone use them as repositories for more automated data access.
+
+The Guatemalan National Institute of Statistics (**INE**) provides several official
+data resources through a web portal roughly arranged by categories and time
+periods (https://www.ine.gob.gt/index.php/estadisticas/fuente-base-de-datos,
+web site in Spanish), but the available datasets are not clearly documented and
+are typically discovered through manual browsing of the site.
+Once a user finds a dataset of interest to her, it is implied by the context
+which format was used to export the data, and no additional instructions on how
+to use the data are provided.
+
+This work presents the overall structure of the INE data portal and showcases
+the `nsgtm` (National Statistics - Guatemala) R package, which allows users to
+explore the available **INE** datasets within R and download them directly for
+use in an R session.
+As a motivating example, the package is used to find and load the
+official birth records from 2010-2015, which are spread across
+several pages.
