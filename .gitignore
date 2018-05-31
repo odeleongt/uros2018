@@ -4,3 +4,8 @@
 .RData
 .Ruserdata
 
+# Ignore intermediate files
+*.log
+*.md
+*.txt
+
