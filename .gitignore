@@ -9,3 +9,9 @@
 *.md
 *.txt
 
+# Ignore output documents
+*.pdf
+*.xls*
+*.od*
+*.png
+*.html
